@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;box-sizing: border-box;}
+body
+{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(#021e08, #483f1e);
+}
+#header
+{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background-color: #8a4747;
+
+}
+.fa-landmark
+{
+    font-size: 20px;
+    display: none !important;
+    cursor: pointer;
+}
+.container
+{
+    padding: 5px 5%;
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo
+{
+    width: 140px;
+}
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+}
+nav ul li a
+{
+    color:#fff ;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after
+{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after
+{
+    width: 100%;
+}
+/*--------blogs--------*/
+.service-container h1
+{
+    font-size: 40px;
+    font-weight: 500;
+    padding: 100px 0px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #fff;
+}
+.service-list
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.list
+{
+    margin: 10px;
+    box-shadow:0px 0px 10px 0px rgb(180, 180, 193);
+    border-radius: 10px;
+}
+h2
+{
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+}
+.serv
+{
+    width:100%;
+    height: 300px;
+    border-radius: 10px;
+}
+.list p
+{
+    text-align: center;
+    color: #fff;
+}
+.list a
+{
+    text-decoration: none;
+}
+/*-------------footer----------*/
+#bottom
+{
+    width: 100%;
+}
+.bottom-wrapper
+{
+    position: relative;
+    display: table;
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 30px;
+}
+.left
+{
+    width: 33%;
+    height: 300px;
+    padding: 40px;
+    float: left;
+    display: block;
+    color: #fff;
+}
+.left h2
+{
+    text-align: center;
+    text-transform: capitalize;
+}
+form label
+{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.left input
+{
+    padding: 5px 14px;
+    margin: 10px;
+}
+.box-left
+{
+    width: 33%;
+    height: 300px;
+    padding: 40px;
+    float: left;
+    display: block;
+    color: #fff;
+}
+button
+{
+    padding: 5px 20px;
+    margin: 10px;
+    position:relative;
+    left: 50px;
+    
+}
+div h3
+{
+    font-size: 30px;
+    margin: 10px;
+}
+div a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+
+    text-transform: capitalize;
+
+}
+.box-right
+{
+    width: 33%;
+    padding: 40px;
+    float: right;
+    display: block;
+    color: #fff;
+}
+.box-right h2
+{
+    text-align: left;
+    font-size: 30px;
+    margin: 10px;
+}
+.box-right p
+{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 10px;
+}
+.box-right span
+{
+    font-size: 20px;
+}
+.box-right a
+{
+    font-size: 16px;
+    text-transform: lowercase;
+}
+.create h4
+{
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+}
+/*------------small screen-----------*/
+@media  (max-width:600px)
+{
+    nav
+    {
+        font-size: 14px;
+    }
+    .logo
+    {
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .fa-landmark
+    {
+        display: block !important;
+        font-size: 25px;
+        margin-top: 5px;
+        color :red;
+        cursor: pointer;
+    }
+    nav ul
+    {
+        background:rgb(19, 66, 63);
+        position: fixed;
+        text-align: center;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 70vh;
+        padding-top:50px;
+        z-index: 2;
+    }
+    nav ul li
+    {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-landmark
+    {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        color: rgb(9, 5, 5);
+        cursor: pointer;
+    }
+    .service-container h1
+    {
+        font-size: 30px;
+        color: #ff004f;
+        
+    }
+    .service-list
+    {
+        display: block;
+    }
+    .left
+    {
+        display: block;
+        width:100%;
+
+    }
+    .box-left
+    {
+        display: block;
+        width: 100%;
+    }
+    .box-right
+    {
+        display: block;
+        width: 100%;
+    }
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav >
+                <img src="images/ac logo.avif" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="company.html">comapany profile</a></li>
+                    <li><a href="our.html">our Service</a></li>
+                    <li><a href="blog.html">blogs</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="tel:+916287221693"><i class="fa-solid fa-phone-volume"></i></a></li>
+                    <i class="fa-solid fa-landmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-landmark" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <!------blogs-->
+    <div id="services">
+        <div class="service-container">
+            <h1>Our Latest Updates</h1>
+                <div class="service-list">
+                    <div class="list">
+                            <img src="images/ins.avif" class="serv">
+                            <a href="#our services"><h2>How to Choose the Right Air Conditioner Repair Service</h2></a>
+                            <p>Learn about the important factors to consider when selecting an air conditioner repair service. Find out what questions to ask and what to look for in a reliable and trustworthy service provider.</p>
+                    </div>
+                        <div class="list">
+                            <img src="images/ff-image-2024-03-15.avif"class="serv">
+                            <h2>The Benefits of Regular Fridge Maintenance</h2>
+                            <p>Discover why regular maintenance is essential for keeping your fridge in optimal condition. Learn about the benefits of routine inspections, cleaning, and servicing to extend the lifespan of your fridge and ensure its efficient performan</p>
+                        </div>
+                </div>
+        </div>
+</div>
+<!-------footer----------->
+<div id="bottom">
+    <div class="bottom-wrapper">
+        <div class="left">
+            <h2>subscribe for our latest update</h2>
+            <form>
+                <label>Email</label>
+                <input type="email" placeholder="Email" required>
+                <br>
+                <button>subscribe</button>
+            </form>
+            </div>
+        <div class="box-left">
+            <div>
+                <h3>Quick links</h3>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="company.html">company profile</a></li>
+                    <li><a href="our.html">our service</a></li>
+                    <li><a href="blog.html">latest update</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box-right">
+            <h2>location</h2>
+            <p>G 374 Mohan nagar Ghaziabad Sahibabad Uttarpardesh 201005</p>
+                <span>Email:</span><a href="mailto:abhaysah462@gmail.com">abhaysah462@gmail.com</a>
+            <span>Phone:</span><a href="tel:+916287221693">+916287221693</a>
+
+
+        </div>
+    </div>
+</div>
+<!----create-->
+<div class="create">
+    <h4>Developed and Managed by abhay <a href="https://abhayankit.github.io/abhay.resume/">abhay.com</a></h4>
+</div>
+
+
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-100%";
+    }
+
+</script>
+    
+</body>
+
+</html>

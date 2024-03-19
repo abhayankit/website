@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;box-sizing: border-box;}
+body
+{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(#021e08, #483f1e);
+}
+#header
+{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background-color: #8a4747;
+
+}
+.fa-landmark
+{
+    font-size: 20px;
+    display: none !important;
+    cursor: pointer;
+}
+.container
+{
+    padding: 5px 5%;
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo
+{
+    width: 140px;
+}
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+}
+nav ul li a
+{
+    color:#fff ;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after
+{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after
+{
+    width: 100%;
+}
+/*------------our service-----*/
+.some
+{
+    color: #fff;
+    padding: 100px 0px;
+
+}
+.some h1
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+}
+.some p
+{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 100px;
+    line-height: 35px;
+}
+/*----------------services-----------*/
+.service-container h1
+{
+    font-size: 40px;
+    font-weight: 500;
+    margin: 50px auto;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #fff;
+}
+.service-list
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.list
+{
+    margin: 10px;
+    box-shadow:0px 0px 10px 0px rgb(180, 180, 193);
+    border-radius: 10px;
+    transition: background 0.5s;
+}
+.list:hover
+{
+    background: #de4274;
+    transform: translateY(-10px);
+}
+h2
+{
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+}
+.serv
+{
+    width:100%;
+    height: 300px;
+    border-radius: 10px;
+}
+.list p
+{
+    text-align: center;
+    color: #fff;
+}
+/*--------------------footer----------*/
+#bottom
+{
+    width: 100%;
+}
+.bottom-wrapper
+{
+    position: relative;
+    display: table;
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 30px;
+}
+.left
+{
+    width: 33%;
+    height: 300px;
+    padding: 40px;
+    float: left;
+    display: block;
+    color: #fff;
+}
+.left h2
+{
+    text-align: center;
+    text-transform: capitalize;
+}
+form label
+{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.left input
+{
+    padding: 5px 14px;
+    margin: 10px;
+}
+.box-left
+{
+    width: 33%;
+    height: 300px;
+    padding: 40px;
+    float: left;
+    display: block;
+    color: #fff;
+}
+button
+{
+    padding: 5px 20px;
+    margin: 10px;
+    position:relative;
+    left: 50px;
+    
+}
+div h3
+{
+    font-size: 30px;
+    margin: 10px;
+}
+div a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+
+    text-transform: capitalize;
+
+}
+.box-right
+{
+    width: 33%;
+    padding: 40px;
+    float: right;
+    display: block;
+    color: #fff;
+}
+.box-right h2
+{
+    text-align: left;
+    font-size: 30px;
+    margin: 10px;
+}
+.box-right p
+{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 10px;
+}
+.box-right span
+{
+    font-size: 20px;
+}
+.box-right a
+{
+    font-size: 16px;
+    text-transform: lowercase;
+}
+.create h4
+{
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+}
+/*---------------small screen--------*/
+@media  (max-width:600px)
+{
+    nav
+    {
+        font-size: 14px;
+    }
+    .logo
+    {
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .fa-landmark
+    {
+        display: block !important;
+        font-size: 25px;
+        margin-top: 5px;
+        color :red;
+        cursor: pointer;
+    }
+    nav ul
+    {
+        background:rgb(145, 169, 9);
+        position: fixed;
+        text-align: center;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 70vh;
+        padding-top:50px;
+        z-index: 2;
+    }
+    nav ul li
+    {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-landmark
+    {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        color: rgb(9, 5, 5);
+        cursor: pointer;
+    }
+    .some h1
+    {
+        font-size: 35px;
+        color: #ff004f;
+        width:100%;
+    }
+    .some p
+    {
+        font-size: 18px;
+        width:100%;
+        padding: 0px 0px;
+    }
+    .service-container h1
+    {
+        font-size: 20px;
+        
+    }
+    .service-list
+    {
+        display: block;
+
+    }
+    .ac-container h1
+    {
+        font-size: 20px;
+    }
+    .left
+    {
+        display: block;
+        width:100%;
+
+    }
+    .box-left
+    {
+        display: block;
+        width: 100%;
+    }
+    .box-right
+    {
+        display: block;
+        width: 100%;
+    }
+
+
+}
+
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav >
+                <img src="images/ac logo.avif" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="company.html">comapany profile</a></li>
+                    <li><a href="our.html">our Service</a></li>
+                    <li><a href="blog.html">blogs</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="tel:+916287221693"><i class="fa-solid fa-phone-volume"></i></a></li>
+                    <i class="fa-solid fa-landmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-landmark" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <!-------- our service ----->
+    <div class="some">
+        <h1>AC And Fridge Repair</h1>
+        <p>We are a company that specializes in providing AC and fridge repair services in Noida. Our team of skilled technicians is dedicated to ensuring that your appliances are functioning optimally and efficiently. Whether your AC is not cooling or your fridge is not staying cold, we have the expertise to diagnose and fix any issue. We understand the importance of a properly working AC and fridge, especially in the hot and humid climate of Noida. Our prompt and reliable services aim to minimize any inconvenience caused by a malfunctioning appliance. We pride ourselves on our professionalism, attention to detail, and excellent customer service. Trust us to provide you with top-notch AC and fridge repairs to keep your home comfortable and your food fresh.
+
+        </p>
+    </div>
+    <!-------services------->
+    <div id="services">
+        <div class="service-container">
+                <div class="service-list">
+                        <div class="list">
+                            <img src="images/ins.avif" class="serv">
+                            <h2>AC Installation</h2>
+                            <p>We provide professional air conditioner repair services in Noida and Ghaziabad. Our team of experts can fix any issue with your AC and ensure optimal cooling performance.</p>
+                        </div>
+                        <div class="list">
+                            <img src="images/ac.avif"class="serv">
+                            <h2>AC Maintenance</h2>
+                            <p>Our technicians are skilled in installing new air conditioning units. We ensure proper installation to maximize cooling efficiency and prolong the lifespan of your AC.</p>
+                        </div>
+                        <div class="list">
+                            <img src="images/ff-image-2024-03-15.avif"class="serv">
+                            <h2>Fridge Repair</h2>
+                            <p>Regular maintenance is essential to keep your AC running smoothly. Our maintenance service includes cleaning, inspection, and tune-up to prevent breakdowns and improve energy efficiency.</p>
+                        </div>
+                </div>
+        </div>
+</div>
+<!-------footer----------->
+<div id="bottom">
+    <div class="bottom-wrapper">
+        <div class="left">
+            <h2>subscribe for our latest update</h2>
+            <form>
+                <label>Email</label>
+                <input type="email" placeholder="Email" required>
+                <br>
+                <button>subscribe</button>
+            </form>
+            </div>
+        <div class="box-left">
+            <div>
+                <h3>Quick links</h3>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="company.html">company profile</a></li>
+                    <li><a href="our.html">our service</a></li>
+                    <li><a href="blog.html">latest update</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box-right">
+            <h2>location</h2>
+            <p>G 374 Mohan nagar Ghaziabad Sahibabad Uttarpardesh 201005</p>
+                <span>Email:</span><a href="mailto:abhaysah462@gmail.com">abhaysah462@gmail.com</a>
+            <span>Phone:</span><a href="tel:+916287221693">+916287221693</a>
+
+
+        </div>
+    </div>
+</div>
+<!----create-->
+<div class="create">
+    <h4>Developed and Managed by abhay <a href="https://abhayankit.github.io/abhay.resume/">abhay.com</a></h4>
+</div>
+
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-100%";
+    }
+
+</script>
+
+    
+</body>
+</html>
